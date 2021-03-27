@@ -1,4 +1,4 @@
-FROM python:3.7-rc
+FROM python:3.7
 
 MAINTAINER Etienne Napoleone <etienne_napo@hotmail.com>
 
