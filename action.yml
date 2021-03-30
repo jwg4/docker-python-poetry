@@ -1,6 +1,0 @@
-name: 'Setup Python Poetry'
-description: 'Make poetry available so package management commands can be used in an action.'
-author: 'Jack Grahl'
-runs:
-  using: 'docker'
-  image: 'Dockerfile'
