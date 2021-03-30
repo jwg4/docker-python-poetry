@@ -1,0 +1,18 @@
+name: Create docker images
+
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    matrix:
+      version:
+        - 3.6-onbuild
+        - 3.7-onbuild
+        - 3.8-onbuild
+        - 3.7
+        - 3.8
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build the Docker image
+      run: docker build --tag poetry/${{ matrix.version }}:$(date +%s) ${{ matrix.version }}
