@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "test_docker"
+version = "0.1.0"
+description = "A package using poetry to test the docker setup."
+authors = ["Jack Grahl <jack.grahl@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+requests = "^2.25.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
